@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "newLine": "lf",
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": true,
+
+    "baseUrl": "./src",
+    "outDir": "build",
+    "lib": ["es2022"],
+    "module": "CommonJS",
+    "target": "es2022",
+
+    "moduleResolution": "node",
+    "composite": false,
+    "inlineSources": false,
+    "preserveWatchOutput": true,
+    "noEmitOnError": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "useUnknownInCatchVariables": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "strictBindCallApply": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    ".vscode/**/*"
+  ]
+}
