@@ -322,6 +322,8 @@ class ServerlessDynamodbLocal implements Plugin {
                 dbPath: options.dbPath,
                 docker: options.docker,
                 sharedDb: options.sharedDb,
+                // @ts-ignore: install_path missing from type definition
+                install_path: options.install_path,
                 delayTransientStatuses: options.delayTransientStatuses,
                 optimizeDbBeforeStartup: options.optimizeDbBeforeStartup,
                 heapInitial: options.heapInitial,
