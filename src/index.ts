@@ -330,6 +330,9 @@ class ServerlessDynamodbLocal implements Plugin {
                 heapMax: options.heapMax,
               });
             }
+            process.on("exit", () => {
+              dynamodbLocal.stop(this.port);
+            });
             return BbPromise.resolve()
             .then(async () => options.migrate && await this.migrateHandler())
             .then(async () => options.seed && await this.seedHandler());
